@@ -1,0 +1,58 @@
+.cuadrado{
+    width: 30px;
+    height: 50px;
+    margin: 20px;
+    padding: 4% 4% 4% 4%;
+    position: fixed;
+    top: 2%;
+    left: 7%;
+}
+
+.cuadrado1{
+    width: 1200px;
+    height:3000px;
+ 
+
+}
+
+
+#color-blue{
+   background-color: #5499C7;
+}
+#color-yellow{
+    background-color: #c3d612;
+ }
+ #color-red{
+    background-color: #d41a23;
+ }
+.estilo{
+    list-style: none;
+    width: 1140px;
+    height: 20px;
+    position: fixed;
+    top: 10%;
+    left: 32%;
+ 
+}
+
+
+.order{
+    float: left;
+    padding: 2% 4% 2% 4%;
+    background-color: rgb(92, 218, 223);
+    opacity: 50%;
+    
+    
+    
+}
+
+
+a{
+    text-decoration: none;
+}
+  a:hover{
+    text-decoration: underline;
+    color: red;
+    font-size: 105%;
+
+  }

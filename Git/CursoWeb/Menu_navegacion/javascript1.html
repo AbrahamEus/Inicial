@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejemplo1</title>
+  </head>
+  <body>
+    <style>
+      .contaner {
+        width: 800px;
+        height: 200px;
+        background-color: aliceblue;
+        border: 10px solid black;
+        margin: 0 auto;
+      }
+      .circle {
+        width: 100px;
+        height: 100px;
+        border-radius: 100px;
+        float: left;
+        margin: 0 10% 0 10%;
+      }
+
+      .color-red {
+        background-color: red;
+      }
+
+      .color-yellow {
+        background-color: yellow;
+      }
+
+      .color-green {
+        background-color: green;
+      }
+
+      .op1 {
+        padding: 10px 80px 0 80px;
+        margin: 1%;
+      }
+      .clear {
+        clear: both;
+      }
+      .center {
+        width: 800px;
+        height: 400px;
+        margin: 0 auto;
+      }
+
+      .texto{
+        
+          padding-top: 25px;
+          padding-left: 12px;
+         
+      }
+    </style>
+
+    <div class="contaner">
+      <div id="red" class="circle color-red"></div>
+      <div id="yellow" class="circle color-yellow"></div>
+      <div id="green" class="circle color-green"><p class="texto" id="">hello world</p></div>
+      <div class="clear"></div>
+      <div class="center">
+        <button id="opcion1" class="op1">Desaparecer</button>
+        <button id="opcion2" class="op1">Cambiar color</button>
+        <button id="opcion3" class="op1">Colocar parrafo</button>
+      </div>
+    </div>
+
+
+    <script>
+        document.getElementById("opcion1").onclick = function(){
+            document.getElementById("red").style.display= "none";
+        }
+        document.getElementById("opcion2").onclick = function(){
+            document.getElementById("yellow").style.background= "black";
+        }
+        document.getElementById("opcion3").onclick = function(){
+            document.getElementById("texto").innerHTML="Hello World"
+        }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comprueba tus reflejos</title>
+  </head>
+
+  <style>
+    #cuadrado {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      position: relative;
+      left: 400px;
+      top: 200px;
+    }
+  </style>
+
+  <body>
+    <h1>Comprueba tus reflejos</h1>
+    <h2>Haz click en los circulos y rectangulos tan rapido como puedas!</h2>
+
+    <p id="">Tiempo de reaccion: <span id="tiempoReaccion"></span></p>
+    <p id="tiempoReaccion1"></p>
+    <p id="res"></p>
+    <div id="cuadrado"></div>
+
+    <!---->
+    <script>
+      var inicio = new Date().getTime();
+
+      var a = [];
+
+      function coloresalea() {
+        var letters = "0123456789ABCDEF".split("");
+        var color = "#";
+        for (var i = 0; i < 6; i++) {
+          color += letters[Math.round(Math.random() * 15)];
+        }
+        return color;
+      }
+
+      function aparecerForma() {
+        var top = Math.floor(Math.random() * 300);
+        var left = Math.floor(Math.random() * 1100);
+        var width = Math.random() * 200 + 100;
+        var color = coloresalea();
+
+        if (Math.random() > 0.5) {
+          document.getElementById("cuadrado").style.borderRadius = "50%";
+        } else {
+          document.getElementById("cuadrado").style.borderRadius = "0%";
+        }
+
+        document.getElementById("cuadrado").style.display = "block";
+        document.getElementById("cuadrado").style.top = top + "px";
+        document.getElementById("cuadrado").style.left = left + "px";
+        document.getElementById("cuadrado").style.width = width + "px";
+        document.getElementById("cuadrado").style.height = width + "px";
+        document.getElementById("cuadrado").style.background = color;
+
+        inicio = new Date().getTime();
+      }
+
+      function aparecerFormaDespuesRetraso() {
+        setTimeout(aparecerForma, Math.random() * 2000);
+      }
+
+      function desafio() {
+        var menor = a[0];
+        for (i = 0; i < a.length; i++) {
+          if (a[i] < menor) {
+            menor = a[i];
+          }
+        }
+        document.getElementById("tiempoReaccion1").innerHTML =
+          "Tiempo a superar " + menor + " s";
+        document.getElementById("tiempoReaccion1").style.background = "yellow";
+      }
+
+      aparecerFormaDespuesRetraso();
+      
+      document.getElementById("cuadrado").onclick = function () {
+        document.getElementById("cuadrado").style.display = "none";
+        var fin = new Date().getTime();
+        var diferencia = 0;
+
+        diferencia = (fin - inicio) / 1000;
+        a.push(diferencia);
+        console.log(a);
+
+        document.getElementById("tiempoReaccion").innerHTML = diferencia + " s";
+
+        aparecerFormaDespuesRetraso();
+        desafio();
+      };
+    </script>
+  </body>
+</html>

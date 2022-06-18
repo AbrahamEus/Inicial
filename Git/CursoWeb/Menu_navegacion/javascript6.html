@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bucle for</title>
+</head>
+<body>
+
+    <div id="tweetsDiv">
+
+    </div>
+    
+    <script>
+
+        var tweets=["Hello, good morning","Hello, good afternon","Hello, good evening"];
+        var cadenaTweets="";
+
+        for (var i = tweets.length-1; i>0; i--){
+            //Bloque de instrucciones
+           cadenaTweets= cadenaTweets + "<p>" + tweets[i] + "</p>";
+
+        }
+document.getElementById("tweetsDiv").innerHTML= cadenaTweets
+    </script>
+</body>
+</html>

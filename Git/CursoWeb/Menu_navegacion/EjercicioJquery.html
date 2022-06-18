@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+</head>
+
+<style>
+    #circle{
+        width: 150px;
+        height: 150px;
+        border-radius: 100px;
+        background-color: green;    
+        margin: 10px;
+    }
+
+    #square{
+        width: 150px;
+        height: 150px;
+        background-color: red;
+        margin: 10px;
+    }
+     #parrafOculto{
+         display: none;
+     }
+
+
+
+</style>
+<body>
+
+    <h1>JQuery Funcion click y fadeIn fadeOut para aparecer texto y desaparecer<h1>
+ 
+ <div id="circle">
+
+ </div> 
+
+ <div id="square" >    
+
+ </div>   
+
+ <div id="square">
+   
+ </div>
+
+
+ <p id="#texto">Esto es un texto para ambos</p>
+
+
+  <button id="ambos">Aparecer/Desbanecer</button>
+
+
+    <script>
+        
+        var prueba = true
+        
+        $("div").click(function(){
+            alert("you pressed on the figure");
+        })
+
+        $("#ambos").click(function(){
+          if(prueba){
+
+           $("p").fadeIn("slow");
+           prueba= false
+        }
+        else{
+            $("p").fadeOut("slow");
+            prueba= true
+        }
+
+
+        })
+
+     
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego</title>
+    <style>
+        #res{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    
+   <h1>
+      ¿Cuantos dedos tengo?
+   </h1>
+
+   <input id="introduceNumber" type="number" placeholder="Numero">
+ <p id="res"></p>
+   <button id="Click" >Comprueba</button>
+
+  
+
+<script>
+
+  
+
+
+    document.getElementById("Click").onclick = function(){
+        var numeroAle= Math.random()*6;
+    var numeroAle1= Math.floor(numeroAle);
+
+    var numeroUsu= document.getElementById("introduceNumber").value;
+    if(numeroUsu == numeroAle1){
+      document.getElementById("res").innerHTML="En hora buena has granado!! " + numeroAle1;  
+      document.getElementById("res").style.background="green";
+    }
+    else{
+        document.getElementById("res").innerHTML="Intenta de nuevo " + numeroAle;  
+      document.getElementById("res").style.background="red";
+
+    }
+    
+
+    }
+    
+
+
+
+</script>
+
+</body>
+</html>

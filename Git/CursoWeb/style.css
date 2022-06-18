@@ -1,0 +1,15 @@
+h1{
+    color: red;
+    font-size: 400%;
+}
+h2{
+    font-size: 200%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.grande{
+    font-size: 400%;
+    color: yellow;
+}
+body{
+    background-color: gray;
+}

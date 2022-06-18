@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World</title>
+</head>
+<body>
+     <!--Ejemplo 1-->
+    <p id="texto">
+        Hello World
+    </p>
+    <button id="my-button">Hi </button>
+   
+     <!--Ejemplo 2-->
+    <p id="texto1">Javascript es ...</p>
+    <button id="my-button1">Cambia el texto</button>
+
+     <!--Ejemplo 3-->
+    <p id="vacio"></p>
+    <button id="my-button2">Crea el parrafo</button>
+
+     <!--Ejemplo 3-->
+    <p id="parrafoConEstilo">Texto con estilo ccs</p>
+    <button id="botonModificarEstilo">Modificar  el estilo</button>
+
+
+
+    <script>
+        document.getElementById("my-button").onclick = function(){
+            document.getElementById("texto").innerHTML="<h1>Bay bay for now</h1>"
+        }
+       
+        document.getElementById("my-button1").onclick = function(){
+            document.getElementById("texto1").innerHTML = document.getElementById("texto1").innerHTML+" Increible"
+        }
+        document.getElementById("my-button2").onclick = function(){
+            document.getElementById("vacio").innerHTML="Clear"
+        }
+
+        document.getElementById("botonModificarEstilo").onclick = function(){
+            document.getElementById("parrafoConEstilo").style.color = "red";
+            document.getElementById("parrafoConEstilo").style.fontSize="50px";
+            document.getElementById("parrafoConEstilo").style.fontWeight = "1800";
+        }
+    </script>
+   
+ <body>
+</html>

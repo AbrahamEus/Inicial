@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technology - BBC News</title>
+    <style>
+        #topbar {
+            width: 1100px;
+            margin: 0 auto;
+            background-color: #f7efef;
+            height: 40px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(245, 245, 245);
+        }
+
+        #logo {
+            margin-top: 8px;
+            width: 84px;
+            height: 24;
+            float: left;
+            margin-right: 8px;
+        }
+
+        .topbar-section {
+            float: left;
+            height: 100%;
+        }
+
+        .topbar-section1 {
+            float: left;
+            border-left: 2px #999999 solid;
+            height: 100%;
+        }
+
+        #signin-imagen {
+            width: 30px;
+            margin: 5px 10px;
+            float: left;
+        }
+
+        #signin-imagen1 {
+            width: 30px;
+            margin: 5px 0;
+            float: left;
+        }
+        .signin-imagen2 {
+            height: 20px;
+            position: relative;
+            top: 2px;
+        }
+
+        #article-summary img {
+            height: 20px;
+            position: relative;
+            top: 2px;
+        }
+
+        #topic-link {
+            text-decoration: none;
+            border-left: 1px solid #CCCCCC;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+        .topic-link {
+            text-decoration: none;
+            padding-left: 5px;
+            padding-right: 5px;
+
+        }
+
+        #article-summary1 {
+            text-decoration: none;
+            border-left: 1px solid #CCCCCC;
+            padding-left: 10px;
+            color: red;
+        }
+        .article-summary1 {
+            text-decoration: none;
+            border-left: 1px solid #CCCCCC;
+            padding-left: 10px;
+            color: red;
+        }
+
+        #article-summary a:hover {
+
+            color: #1167a8;
+
+        }
+
+
+        #signin-texto {
+            font-weight: bold;
+            font-size: 85%;
+            position: relative;
+            top: 10px;
+            padding-right: 50px;
+        }
+
+        .topbar-menu {
+            font-weight: bold;
+            font-size: 70%;
+            padding: 13px 15px 0 15px;
+            height: 27px;
+        }
+
+        .topbar-menu a {
+            color: black;
+            text-decoration: none;
+        }
+
+        .topbar-menu a:hover {
+            text-decoration: 2px underline red;
+        }
+
+        #search-box {
+
+            font-weight: bold;
+            font-size: 10px;
+            width: 150px;
+            margin-top: 2%;
+
+
+        }
+
+        .topbar-section2 {
+            float: left;
+            height: 100%;
+            margin-top: 8%;
+        }
+
+        button:hover {
+            border: #FFFFFF;
+
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        #menu-bar-container {
+            background-color: #bb1919;
+            width: 1100;
+            height: 70px;
+            margin-top: 10px;
+        }
+
+        #menu-bar {
+            width: 1100px;
+            margin: 0 auto;
+
+        }
+
+        #menu-bar-container-2 {
+            background-color: #a91717;
+            width: 1100;
+            height: 40px;
+
+        }
+
+        #menu-bar-2 {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        #menu-bar-2 a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+            border-right: 1px solid #b84544;
+            padding-left: 45px;
+            position: relative;
+            top: 10px;
+            padding: 10px;
+
+        }
+
+        #menu-bar-2 a:hover {
+            text-decoration: underline;
+        }
+
+        h1 {
+
+            margin: 0;
+            color: white;
+            font-size: 40px;
+            font-weight: 300;
+            padding-top: 10px;
+
+        }
+
+        #page-container {
+            width: 1100px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-weight: normal;
+            font-size: 20px;
+            border-bottom: 3px solid #bb1919;
+            width: 105px;
+        }
+
+        h3 a {
+            color: black;
+            font-size: 35px;
+            text-decoration: none;
+        }
+
+        h3 a:hover {
+            color: #1167a8;
+        }
+
+        #article-summary {
+            color: a5a5a5a;
+            width: 240px;
+            float: left;
+        }
+
+        #date {
+            padding-right: 8px;
+        }
+
+        #article-container {
+            float: left;
+            width: 690px;
+            border-right: 1px solid #CCCCCC;
+            padding-right: 20PX;
+
+        }
+
+        #main-article-img {
+            width: 400px;
+            margin-left: 20px;
+
+
+
+        }
+
+        #article-hr {
+            border-top: 2px solid #991717;
+            width: 50px;
+        }
+
+        .article-link {
+            color: black;
+            text-decoration: none;
+            font-size: 14px;
+
+        }
+          #watch-listen{
+            margin-left: 26px;
+            width: 360px;
+            float: right;
+            position: relative;
+            top: -55;
+            left: -100;
+          }
+          #watch-listen h4{
+            font-size: 24px;
+            font-weight: normal;
+          }
+        .article-side-image{
+            float: left;
+            width: 120px;
+            margin-right: 15px;
+        }
+        .whatch-listen-link{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .whatch-listen-link:hover{
+          color: #1167AD;          
+        }
+    </style>
+</head>
+
+<body>
+    <div id="topbar">
+        <img id="logo" src="logoBBC.png" alt="">
+        <div id="sign-in" class="topbar-section">
+            <img id="signin-imagen" src="img.png" alt="">
+            <span id="signin-texto">Sign in</span>
+        </div>
+        <div class="topbar-section1 topbar-menu">
+            <a href="">Home</a>
+        </div>
+        <div class="topbar-section topbar-menu">
+            <a href="">News</a>
+        </div>
+        <div class="topbar-section topbar-menu">
+            <a href="">Sport</a>
+        </div>
+        <div class="topbar-section topbar-menu">
+            <a href="">Reel</a>
+        </div>
+        <div class="topbar-section topbar-menu">
+            <a href="">Worklife</a>
+        </div>
+        <div class="topbar-section topbar-menu">
+            <a href="">Travel</a>
+        </div>
+        <div class="topbar-section topbar-menu">
+            <a href="">Future</a>
+        </div>
+        <div class="topbar-section topbar-menu">
+            <a href="">Culture</a>
+        </div>
+        <div class="topbar-section ">
+            <img id="signin-imagen" src="img1.png" alt="">
+        </div>
+
+        <div class="topbar-section">
+
+
+
+            <button type="submit" id="search-box" name="Button"><img id="signin-imagen1" src="imgBuscar.png" alt="">
+                <samp class="topbar-section2">Search BBC</samp></button>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="clear">
+
+    </div>
+
+    <div id="menu-bar-container">
+        <div id="menu-bar">
+            <h1>News</h1>
+        </div>
+    </div>
+    <div id="menu-bar-container-2">
+        <div id="menu-bar-2">
+            <a href="">Home</a>
+            <a href="">Video</a>
+            <a href="">World</a>
+            <a href="">Uk</a>
+            <a href="">Bussines </a>
+            <a href="">Tech</a>
+            <a href="">Science</a>
+            <a href="">Magazine</a>
+            <a href="">Entertaiment & Arts</a>
+            <a href="">Health</a>
+            <a href="">World News & TV</a>
+            <a href="">More</a>
+        </div>
+    </div>
+    <div id="clear"></div>
+
+    <div id="page-container">
+        <div id="main-article">
+            <h2>Technology</h2>
+
+            <div id="article-container">
+                <h3><a href="">San Bernardino hack 'cost FBI over $1m' </a></h3>
+
+                <div id="article-summary">
+                    <p>
+                        The figure paid by the FBI to unnamed experts to unlock the phone of the San Bernardino killer
+                        has been estimated at $1.3m or more.
+                    </p>
+                    <p>
+                        <img id="signin-imagen2" src="reloj.png" alt="">
+                        <span id="topic-link"> 22 April 2016</span>
+                        <a id="article-summary1" href="">Technology</a>
+                    </p>
+                    <hr id="article-hr" align="left">
+                    <p><a class="article-link" href="">Apple v the FBI - in plain English</a></p>
+                    <p><a class="article-link" href=""> Apples FBI row is only just beginning</a></p>
+
+
+                </div>
+
+                <div>
+                    <img id="main-article-img" src="anonymous.jpeg" alt="">
+
+                </div>
+                
+                
+            </div>
+              
+            <div class=""></div>
+            <div id="watch-listen">
+                <h4>Wathch/listen</h4>
+                <img class="article-side-image" src="video.png" alt="">
+                <a class="whatch-listen-link" href="">
+                The scientist de Coldplay</a>
+                <p>
+                    <img class="signin-imagen2" src="reloj.png" alt="">
+                    <span class="topic-link"> 22 April 2016</span>
+                    <a class="article-summary1" href="">Technology</a>
+                </p>
+            </div>
+            <div id="watch-listen">
+              
+                <img class="article-side-image" src="video1.png" alt="">
+                <a class="whatch-listen-link" href="">
+                    Pablo Alborán - Saturno</a>
+                <p>
+                    <img class="signin-imagen2" src="reloj.png" alt="">
+                    <span class="topic-link"> 22 April 2016</span>
+                    <a class="article-summary1" href="">Technology</a>
+                </p>
+            </div>
+            <div id="watch-listen">
+              
+                <img class="article-side-image" src="video2.png" alt="">
+                <a class="whatch-listen-link" href="">
+                    No Te Contaron Mal </a>
+                <p>
+                    <img class="signin-imagen2" src="reloj.png" alt="">
+                    <span class="topic-link"> 22 April 2016</span>
+                    <a class="article-summary1" href="">Technology</a>
+                </p>
+            </div>
+            <div id="watch-listen">
+              
+                <img class="article-side-image" src="video3.png" alt="">
+                <a class="whatch-listen-link" href="">
+                    Me sobrabas tu </a>
+                <p>
+                    <img class="signin-imagen2" src="reloj.png" alt="">
+                    <span class="topic-link"> 22 April 2016</span>
+                    <a class="article-summary1" href="">Technology</a>
+                </p>
+            </div>
+           </div>
+           
+    </div>
+</body>
+
+</html>

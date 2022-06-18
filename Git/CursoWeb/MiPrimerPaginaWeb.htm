@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--Encabezado de una pagina Web.
+    Este elemento designa la parte de encabezado del documento. Puede incluir información opcional sobre la página Web, como puede ser el título (el navegador lo muestra en la barra de título), palabras clave de búsqueda opcionales y una hoja de estilo opcional.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFirstPageWeb</title>
+</head>
+
+<body>
+    <!--Cuerpo de la pagina web-->
+
+    <!--Enlaces Externos-->
+
+    <p>Para ir a google as <a href="https://www.google.com.mx/?gws_rd=ssl">click aquí</a> </p>
+
+    <a href="https://www.google.com.mx/?gws_rd=ssl"><img
+            src="https://www.google.com.mx/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+            alt="Google"></a>
+
+    <!--Enlaces Externos-->
+    <ol id="Arriba">
+
+        <li> <a href="#Formato">Formato de texto</a></li>
+        <li> <a href="#Listas">Listas desordenadas</a></li>
+        <li> <a href="#Listas2">Listas ordenadas</a></li>
+        <li> <a href="#Formulario">Formulario</a></li>
+
+    </ol>
+
+
+    <!--¿Poque es importante esta etiqueta
+    Los buscadores cuando hacen las busquedas tienen que indexar la informacion que encuentren en internet y clasificarla.
+     En cuanto a una serie de palabras que se conocen como palbras claves o en ingles keywords.
+      la eleccion que hagamos de las palabras que vamos a meteren en nuestras Paginas webs encerradasa en las etiqueta de titulo en la etiqueta de tipo H van a determnianar en gran medida el posicionamiento de nuestra paginas web  -->
+    <h1>Encabezado nivel 1</h1>
+    <h2>Encabezado nivel 2</h2>
+    <h3>Encabezado nivel 3</h3>
+    <h4>Encabezado nivel 4</h4>
+    <h5>Encabezado nivel 5</h5>
+    <h6>Encabezado nivel 7</h6>
+    <!--Parrafos formatos de textox-->
+    <div id="Formato">
+
+        <p><strong>Este texto esta en negritas</strong> </p>
+
+        <p><i>Este texto esta en cursiva</i> </p>
+
+        <p><u>Este texto esta subrayado</u> </p>
+
+        <p><strong>Este texto esta <del>tachado</del> </strong> </p>
+
+        <p><strong>Este texto esta en <sup>super indice </sup></strong> </p>
+
+        <p><strong>Este texto esta en <sub>sub indice </sub></strong> </p>
+    </div>
+
+    <!--Lista desordenada
+    -->
+
+    <div id="Listas">
+        <ul>
+            <li><strong>numero1</strong></li>
+            <li><u>numero2</u></li>
+            <li><i>numero3</i></li>
+        </ul>
+    </div>
+
+    <!--Lista ordenada
+    -->
+    <div id="Listas2">
+        <ol>
+            <li>elemento1</li>
+            <li>elemento2</li>
+            <li>elemento3</li>
+            <li>elemento4</li>
+        </ol>
+    </div>
+
+    <!--Imagen
+    -->
+
+    <div align="right">
+        <!--Alinea imagen, el atributo align-->
+        <img src="bard.jpg" alt="Bard simpson" width="150" height="200">
+        <p>Bar simpson</p>
+    </div>
+
+    <section id="Formulario">
+        <h2>Acceso</h2>
+        <form action="">
+            <fieldset>
+                <legend>Accede llenando todos los campos</legend>
+                <div>
+                    <label for="">Nombre:</label>
+                    <input type="Text" placeholder="Nombre">
+                </div>
+
+                <div>
+                    <label for="">Contraseña:</label>
+                    <input type="password" placeholder="Contraseña">
+                </div>
+
+                <div>
+                    <label for="">Sexo</label>
+                    <br>
+                    <label for="">Hombre:</label>
+                    <input type="radio" name="Sexo" value="Hombre">
+
+                    <label for="">Mujer:</label>
+                    <input type="radio" name="Sexo" value="Mujer">
+
+                </div>
+                <br>
+
+                <p>Mes:
+                    <select>
+                        <option selected value="">Enero</option>
+                        <option value="">Febrero</option>
+                        <option value="">Marzo</option>
+                        <option value="">Abril</option>
+                        <option value="">Mayo</option>
+                        <option value="">Junio</option>
+                        <option value="">Julio</option>
+                        <option value="">Agosto</option>
+                    </select>
+                </p>
+                <input type="submit" value="Has click para enviar">
+
+            </fieldset>
+        </form>
+    </section>
+    <br>
+    <!--Tablas-->
+    <div>
+        <table border="2">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Color preferido</th>
+                    </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Jose Luis</td>
+                    <td>Rojo</td>
+                </tr>
+                <tr>
+                    <td>Andrea</td>
+                    <td>Verde</td>
+                </tr>
+                <tr>
+                    <td>Martha</td>
+                    <td>Azul</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <p><a href="#Arriba">Arriba</a></p>
+
+
+    <!--
+        Entidades nos van a servir cuando queramos poner en nuestra pagina web 
+        determinado simbolosespeciales
+    -->
+
+    <p>Esto es una    &nbsp;&nbsp;&nbsp;  prueba</p>
+    <p>Hola este es una etiqueta &lt;a&gt; para enlace &lt;/a&gt;</p>
+<!--
+    Iframe especifica en un recuerdo la altura y la anchura
+    de otro sitio web 
+-->
+<iframe src="https://academiavacco.com/" frameborder="1"></iframe>
+</body>
+
+</html>

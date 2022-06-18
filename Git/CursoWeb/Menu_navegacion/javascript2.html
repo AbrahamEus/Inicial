@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo2</title>
+</head>
+
+<style>
+    #user-input{
+        background-color: gold;
+        padding: 3% 3%;
+        margin-left: 15px;
+        color: black;
+        font-weight: 5;
+        font-size: 14px;
+       }
+    #text{
+        font-size: 15px;
+        font-weight: bold;
+        margin-left: 0 auto;
+        text-align: center;
+
+    }
+    #container{
+        width: 200px;
+        height: 100px;
+        margin: 0 auto;
+        background-color: #cccccc;
+        padding: 50px 50px 50px 52.5px;
+
+    }
+    #showmessage{
+        margin-left: 77px ;
+        padding: 5px 5px;
+        background-color: aqua;
+        font-weight: bold;
+    }
+</style>
+<body>
+     <div id="container">
+     <input id="user-input" type="text" placeholder="Introduce your name">
+     <p id="text">log in</p>
+     <button id="showmessage">Login</button>
+     </div>
+    
+
+
+
+
+    <script>
+  
+        document.getElementById("showmessage").onclick= function(){
+            
+            var intro="";
+        
+            if ( document.getElementById("user-input").value  == ""){
+            document.getElementById("text").innerHTML="Introduce your name" ; 
+            document.getElementById("text").style.background="red"; 
+
+            }
+
+            else{
+                intro =
+        document.getElementById("user-input").value;
+        document.getElementById("text").innerHTML="Welcome " + intro; 
+        document.getElementById("text").style.background="green";
+        
+
+            }
+        
+        
+     }
+
+   
+
+    </script>
+</body>
+</html>

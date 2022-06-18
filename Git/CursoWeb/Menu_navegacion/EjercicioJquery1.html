@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+        #circle{
+            width: 150px;
+            height: 150px;
+            background-color: green;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <h1>JQuery caracteristica animate</h1>
+ <p>es una tecnica de desarollo web que permite comunicar el navegador del usuario
+    con el servidor de manera asincrona
+ </p>
+    <div id="circle">
+
+    </div>
+
+    <script>
+        $("#circle").click(function(){
+          $(this).animate({
+            width: "400px",
+            height: "400px",
+             margin: "100px 0 0 100px" ,
+          },200, function(){
+            $(this).css("background-color","red")
+          })
+        })
+    </script>
+</body>
+</html>

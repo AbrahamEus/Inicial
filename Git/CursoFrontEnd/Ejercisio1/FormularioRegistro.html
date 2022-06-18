@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    
+    <style>
+         body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+    #formulario{
+        height:25%;
+        width: 25%;
+        margin: 0px auto;
+    }
+
+    #formulario h1{
+        background-color: black;
+        color: white;
+        text-align: center ;
+        margin-top: 10px ;
+        margin-bottom: 0px;  
+         
+    }
+    form{
+        background-color: #F4D03F ;
+        margin-top: 0px;
+    }
+
+    form fieldset{
+        border: 5px solid black;
+        margin: 8px 8px 8px 8px;
+    }
+    form legend{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    form #input {
+        float: lef;
+        background-color: #FCF3CF;
+        opacity: 99;
+        margin: 10px 10px 10px 10px;
+        border: solid black 1px;
+        width: 95%;
+        font-size: 100%;
+        border-bottom: #A9CCE3;
+         border-right: #A9CCE3;
+              
+    }
+  
+    
+    #Sex {
+      
+       margin-left: 10px;
+
+    }
+    #Sex p{
+        font-size: 15px;
+        font-weight: bold;
+
+    }
+    #Sex label{
+        font-size: 15px;
+       
+    }
+
+    form button{
+        height: 35px;
+        width: 150px;
+        margin: 10px 20px 10px 10px;
+        padding: 5px 5px 5px 5px;
+        background-color: #FCF3CF;
+
+    }
+    form button:hover {
+        background-color: greenyellow;
+
+    }
+
+    </style>
+    
+        <div id="formulario">
+            <h1>Registration</h1>
+            <form action="">
+                <fieldset>
+                <legend>Register by filling all the fields</legend>
+                <input type="text" name="" id="input" placeholder="Name">
+                <input type="text" name="" id="input" placeholder="Last name">
+                <input type="tel" name="" id="input" placeholder="Number">
+                <input type="email" name="" id="input" placeholder="Mail">
+             
+                  
+                  <div id="Sex">
+                     <p>Sex</p>
+
+                    <label for="">Men</label>
+
+                    <input type="radio" name="Sexo" value="Men">
+
+                    <label for="">Woman</label>
+                 
+                    <input type="radio" name="Sexo" value="Woman">
+
+                  </div> 
+                   
+
+                
+                <input type="password" name="" id="input" placeholder="Password">
+                <input type="password" name="" id="input" placeholder="Confirm password">
+                
+                <button>Create Account</button>
+            </fieldset>
+           </form>
+
+     
+    </div>
+</body>
+</html>
